@@ -11,6 +11,7 @@ module Id90Tracer
     TRACE_ID_ENV = 'HTTP_ID90_TRACE_ID'
 
     PARENT_REQUEST_ID_HEADER = 'Id90-Parent-Request-Id'
+    REQUEST_ID_HEADER = 'Id90-Request-Id'
     TRACE_ID_HEADER = 'Id90-Trace-Id'
 
     def self.parent_request_id
