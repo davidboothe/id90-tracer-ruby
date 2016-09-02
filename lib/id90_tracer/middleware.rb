@@ -28,6 +28,10 @@ module Id90Tracer
       if env.key?(Request::TRACE_ID_ENV)
         Request.trace_id = env[Request::TRACE_ID_ENV]
       end
+
+      env[Request::PARENT_REQUEST_ID_HEADER] = Request.parent_request_id
+      env[Request::REQUEST_ID_HEADER] = Request.request_id
+      env[Request::TRACE_ID_HEADER] = Request.trace_id
     end
   end
 end
